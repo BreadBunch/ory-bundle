@@ -1,0 +1,18 @@
+# Normalize line endings
+* text=auto
+
+# Exclude development-only files from export (for libraries)
+.gitignore export-ignore
+.gitattributes export-ignore
+.editorconfig export-ignore
+phpunit.xml.dist export-ignore
+phpunit.xml export-ignore
+.env export-ignore
+.env.* export-ignore
+composer.lock export-ignore
+
+# Mark files as PHP for GitHub highlight
+*.php linguist-language=PHP
+*.twig linguist-language=Twig
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML

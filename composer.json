@@ -1,0 +1,55 @@
+{
+    "name": "bread/ory-bundle",
+    "type": "symfony-bundle",
+    "description": "",
+    "version": "0.1.0",
+    "license": "MIT",
+    "keywords": [
+        "symfony",
+        "bundle",
+        "ory-bundle",
+        "ory",
+        "bread",
+        "security"
+    ],
+    "authors": [
+        {
+            "name": "BreadBunch",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "symfony/framework-bundle": "^8.1",
+        "symfony/security-bundle": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "symfony/phpunit-bridge": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bread\\Ory\\Bundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bread\\Ory\\Bundle\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true,
+        "platform-check": false
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "^8.0"
+        }
+    }
+}
