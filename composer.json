@@ -1,9 +1,10 @@
 {
     "name": "bread/ory-bundle",
     "type": "symfony-bundle",
-    "description": "",
+    "description": "Symfony 8+ integration bundle for Ory ecosystem (Kratos, Oathkeeper, Network)",
     "version": "0.1.0",
-    "license": "MIT",
+    "homepage": "https://github.com/BreadBunch/ory-bundle",
+    "license": "GPL-3.0-or-later",
     "keywords": [
         "symfony",
         "bundle",
@@ -21,7 +22,9 @@
     "require": {
         "php": ">=8.4",
         "symfony/framework-bundle": "^8.1",
-        "symfony/security-bundle": "^8.1"
+        "symfony/security-bundle": "^8.1",
+        "ory/client": "^1.22",
+        "symfony/http-client": "^8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0",
