@@ -20,12 +20,12 @@
     ],
     "require": {
         "php": ">=8.4",
-        "symfony/framework-bundle": "^8.0",
-        "symfony/security-bundle": "^8.0"
+        "symfony/framework-bundle": "^8.1",
+        "symfony/security-bundle": "^8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0",
-        "symfony/phpunit-bridge": "^8.0"
+        "symfony/phpunit-bridge": "^8.1"
     },
     "autoload": {
         "psr-4": {
