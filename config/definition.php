@@ -24,5 +24,6 @@ return static function (DefinitionConfigurator $definition): void
                 ->end()
             ->end()
         ->end()
+        
     ->end();
 };

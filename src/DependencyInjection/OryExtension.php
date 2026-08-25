@@ -39,10 +39,13 @@ final class OryExtension extends AbstractExtension
      */
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
-        $container->import('../../config/ory.php');
+        $vendor = 'ory';
 
-        $container->setParameter('ory.client.base_url', $config['client']['base_url']);
-        $container->setParameter('ory.client.timeout', $config['client']['timeout']);
+        $builder->setParameter($vendor.'.client.base_url', $config['client']['base_url']);
+        $builder->setParameter($vendor.'.client.timeout', $config['client']['timeout']);
+    
+        $container->import('../../config/authenticator.php');
+        $container->import('../../config/ory.php');
     }
 
     /**

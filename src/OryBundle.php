@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Bread\Ory\Bundle;
 
 use Bread\Ory\Bundle\DependencyInjection\OryExtension;
+use Bread\Ory\Bundle\DependencyInjection\Security\Factory\OryAuthenticatorFactory;
+use Symfony\Bundle\SecurityBundle\DependencyInjection\SecurityExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
@@ -31,5 +33,10 @@ final class OryBundle extends AbstractBundle
     public function build(ContainerBuilder $container): void
     {
         parent::build($container);
+
+        /** @var SecurityExtension $extension */
+        $extension = $container->getExtension('security');
+
+        $extension->addAuthenticatorFactory(new OryAuthenticatorFactory());
     }
 }
