@@ -1,6 +1,6 @@
 <?php
 
-namespace Bread\Ory\Bundle\DependencyInjection\Security\Factory;
+namespace BB\Ory\Bundle\DependencyInjection\Security\Factory;
 
 use Override;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\AuthenticatorFactoryInterface;

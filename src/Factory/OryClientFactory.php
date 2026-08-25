@@ -1,8 +1,8 @@
 <?php
 
-namespace Bread\Ory\Bundle\Factory;
+namespace BB\Ory\Bundle\Factory;
 
-use Bread\Ory\Contracts\Client\OryClientFactoryInterface;
+use BB\Ory\Contracts\Client\OryClientFactoryInterface;
 use GuzzleHttp\ClientInterface;
 use Ory\Client\Api\FrontendApi;
 use Ory\Client\Api\IdentityApi;

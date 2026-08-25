@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bread\Ory\Bundle\DependencyInjection;
+namespace BB\Ory\Bundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -67,7 +67,7 @@ final class OryExtension extends AbstractExtension
      * Returns the alias for this extension.
      *
      * The alias is used to reference the extension's configuration in the
-     * application's configuration files (e.g., config/packages/bread_ory.yaml).
+     * application's configuration files (e.g., config/packages/BB_ory.yaml).
      *
      * @return string The extension alias string.
      */

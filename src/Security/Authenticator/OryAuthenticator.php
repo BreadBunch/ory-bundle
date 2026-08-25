@@ -1,8 +1,8 @@
 <?php
 
-namespace Bread\Ory\Bundle\Security\Authenticator;
+namespace BB\Ory\Bundle\Security\Authenticator;
 
-use Bread\Ory\Contracts\Security\User\OryUserProviderInterface;
+use BB\Ory\Contracts\Security\User\OryUserProviderInterface;
 use Ory\Client\Api\FrontendApi;
 use Override;
 use Symfony\Component\HttpFoundation\Request;

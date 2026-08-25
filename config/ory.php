@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use Bread\Ory\Bundle\Factory\OryClientFactory;
-use Bread\Ory\Contracts\Client\OryClientFactoryInterface;
+use BB\Ory\Bundle\Factory\OryClientFactory;
+use BB\Ory\Contracts\Client\OryClientFactoryInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Ory\Client\Api\FrontendApi;

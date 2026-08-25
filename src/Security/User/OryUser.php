@@ -1,8 +1,8 @@
 <?php
 
-namespace Bread\Ory\Bundle\Security\User;
+namespace BB\Ory\Bundle\Security\User;
 
-use Bread\Ory\Contracts\Security\User\OryUserInterface;
+use BB\Ory\Contracts\Security\User\OryUserInterface;
 
 class OryUser implements OryUserInterface
 {

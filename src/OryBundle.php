@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bread\Ory\Bundle;
+namespace BB\Ory\Bundle;
 
-use Bread\Ory\Bundle\DependencyInjection\OryExtension;
-use Bread\Ory\Bundle\DependencyInjection\Security\Factory\OryAuthenticatorFactory;
-use Bread\Ory\Bundle\DependencyInjection\Security\Factory\OryUserFactory;
+use BB\Ory\Bundle\DependencyInjection\OryExtension;
+use BB\Ory\Bundle\DependencyInjection\Security\Factory\OryAuthenticatorFactory;
+use BB\Ory\Bundle\DependencyInjection\Security\Factory\OryUserFactory;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\SecurityExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
