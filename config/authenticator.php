@@ -7,6 +7,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 use Bread\Ory\Bundle\Security\Authenticator\OryAuthenticator;
 use Bread\Ory\Bundle\Security\Http\Authentication\OryAuthenticationFailureHandler;
 use Bread\Ory\Bundle\Security\Http\Authentication\OryAuthenticationSuccessHandler;
+use Bread\Ory\Bundle\Security\User\OryUserProvider;
 
 return static function (ContainerConfigurator $container): void {
     $services = $container->services()
@@ -29,5 +30,8 @@ return static function (ContainerConfigurator $container): void {
         ->abstract();
 
     $services->set($vendor.'.security.failure_handler.abstract', OryAuthenticationFailureHandler::class)
+        ->abstract();
+
+    $services->set($vendor.'.security.provider.abstract', OryUserProvider::class)
         ->abstract();
 };
