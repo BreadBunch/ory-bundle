@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use Bread\Ory\Bundle\Security\Authenticator\OryAuthenticator;
-use Bread\Ory\Bundle\Security\Http\Authentication\OryAuthenticationFailureHandler;
-use Bread\Ory\Bundle\Security\Http\Authentication\OryAuthenticationSuccessHandler;
-use Bread\Ory\Bundle\Security\User\OryUserProvider;
+use BB\Ory\Bundle\Security\Authenticator\OryAuthenticator;
+use BB\Ory\Bundle\Security\Http\Authentication\OryAuthenticationFailureHandler;
+use BB\Ory\Bundle\Security\Http\Authentication\OryAuthenticationSuccessHandler;
+use BB\Ory\Bundle\Security\User\OryUserProvider;
 
 return static function (ContainerConfigurator $container): void {
     $services = $container->services()

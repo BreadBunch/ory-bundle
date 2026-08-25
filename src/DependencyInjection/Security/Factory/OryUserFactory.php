@@ -1,9 +1,9 @@
 <?php
 
-namespace Bread\Ory\Bundle\DependencyInjection\Security\Factory;
+namespace BB\Ory\Bundle\DependencyInjection\Security\Factory;
 
-use Bread\Ory\Bundle\Security\User\OryUser;
-use Bread\Ory\Contracts\Security\User\OryUserInterface;
+use BB\Ory\Bundle\Security\User\OryUser;
+use BB\Ory\Contracts\Security\User\OryUserInterface;
 use Override;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\UserProvider\UserProviderFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;

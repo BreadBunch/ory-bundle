@@ -1,6 +1,6 @@
 <?php
 
-namespace Bread\Ory\Bundle\Security\Http\Authentication;
+namespace BB\Ory\Bundle\Security\Http\Authentication;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

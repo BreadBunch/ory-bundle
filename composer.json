@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bread\\Ory\\Bundle\\": "src/"
+            "BB\\Ory\\Bundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bread\\Ory\\Bundle\\Tests\\": "tests/"
+            "BB\\Ory\\Bundle\\Tests\\": "tests/"
         }
     },
     "config": {
