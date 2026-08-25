@@ -2,7 +2,7 @@
     "name": "bread/ory-bundle",
     "type": "symfony-bundle",
     "description": "Symfony 8+ integration bundle for Ory ecosystem (Kratos, Oathkeeper, Network)",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/BreadBunch/ory-bundle",
     "license": "GPL-3.0-or-later",
     "keywords": [
