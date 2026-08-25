@@ -2,7 +2,7 @@
     "name": "breadbunch/ory-bundle",
     "type": "symfony-bundle",
     "description": "Symfony 8+ integration bundle for Ory ecosystem (Kratos, Oathkeeper, Network)",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "homepage": "https://github.com/BreadBunch/ory-bundle",
     "license": "GPL-3.0-or-later",
     "keywords": [
@@ -25,7 +25,7 @@
         "symfony/security-bundle": "^8.1",
         "ory/client": "^1.22",
         "symfony/http-client": "^8.1",
-        "bread/ory-contracts": "^0.1.0"
+        "breadbunch/ory-contracts": "^0.1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^13.1",
@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bread\\Ory\\Bundle\\": "src/"
+            "BB\\Ory\\Bundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bread\\Ory\\Bundle\\Tests\\": "tests/"
+            "BB\\Ory\\Bundle\\Tests\\": "tests/"
         }
     },
     "config": {

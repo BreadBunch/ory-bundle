@@ -1,8 +1,8 @@
 <?php
 
-namespace Bread\Ory\Bundle\Security\User;
+namespace BB\Ory\Bundle\Security\User;
 
-use Bread\Ory\Contracts\Security\User\OryUserProviderInterface;
+use BB\Ory\Contracts\Security\User\OryUserProviderInterface;
 use Ory\Client\Api\IdentityApi;
 use Ory\Client\ApiException;
 use Ory\Client\Model\Identity;
