@@ -7,7 +7,7 @@ The bundle handles the low-level tasks of intercepting HTTP requests, validating
 ## Installation
 
 ```bash
-composer require bread/ory-bundle
+composer require breadbunch/ory-bundle
 ```
 
 ## License
