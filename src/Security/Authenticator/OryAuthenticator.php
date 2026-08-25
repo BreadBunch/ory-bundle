@@ -2,7 +2,6 @@
 
 namespace Bread\Ory\Bundle\Security\Authenticator;
 
-use Bread\Ory\Bundle\Client\Exception\ApiException;
 use Bread\Ory\Contracts\Security\User\OryUserProviderInterface;
 use Ory\Client\Api\FrontendApi;
 use Override;
@@ -16,8 +15,9 @@ use Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator;
 use Symfony\Component\Security\Http\Authenticator\Passport\Badge\UserBadge;
 use Symfony\Component\Security\Http\Authenticator\Passport\Passport;
 use Symfony\Component\Security\Http\Authenticator\Passport\SelfValidatingPassport;
+use Symfony\Component\Security\Http\EntryPoint\AuthenticationEntryPointInterface;
 
-class OryAuthenticator extends AbstractAuthenticator
+class OryAuthenticator extends AbstractAuthenticator implements AuthenticationEntryPointInterface
 {
     public function __construct(
         private readonly FrontendApi $frontendApi,
@@ -27,6 +27,14 @@ class OryAuthenticator extends AbstractAuthenticator
         private string $sessionCookieName = 'ory_kratos_session'
     )
     {}
+
+    #[Override]
+    public function start(Request $request, ?AuthenticationException $authException = null): Response
+    {
+        $exception = $authException ?? new AuthenticationException('Full authentication is required to access this resource.');
+        
+        return $this->failureHandler->onAuthenticationFailure($request, $exception);
+    }
 
     #[Override]
     public function supports(Request $request): ?bool
