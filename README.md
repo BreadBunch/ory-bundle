@@ -10,6 +10,16 @@ The bundle handles the low-level tasks of intercepting HTTP requests, validating
 composer require bread/ory-bundle
 ```
 
+## Configurations
+
+Configuration file `bread_ory.yaml`.
+
+```yaml
+bread_ory:
+  client:
+    base_url: '%env(ORY_BASE_URL)%'
+```
+
 ## License
 
 [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](./LICENSE)
