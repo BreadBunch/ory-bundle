@@ -25,7 +25,7 @@
         "symfony/security-bundle": "^8.1",
         "ory/client": "^1.22",
         "symfony/http-client": "^8.1",
-        "bread/ory-contracts": "^0.1.0"
+        "breadbunch/ory-contracts": "^0.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^13.1",
